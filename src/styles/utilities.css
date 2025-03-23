@@ -1,0 +1,133 @@
+/* Font utility */
+.underlined {
+  text-decoration: underline;
+}
+
+.normal {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* Font Size Utilities */
+
+/* Smaller font sizes */
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+}
+
+.text-xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+/* Larger font sizes */
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* 20px */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+}
+
+.text-3xl {
+  font-size: 1.875rem; /* 30px */
+}
+
+.text-4xl {
+  font-size: 2.25rem; /* 36px */
+}
+
+.text-5xl {
+  font-size: 3rem; /* 48px */
+}
+
+/* Responsive font size utilities */
+@media (min-width: 640px) {
+  .sm\:text-lg {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem; /* 20px */
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-lg {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem; /* 20px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-lg {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem; /* 20px */
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+/* Spacing Utilities */
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}

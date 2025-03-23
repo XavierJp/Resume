@@ -1,0 +1,29 @@
+.right-column {
+  width: 77%;
+  font-size: 1rem;
+
+  .block {
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 9px;
+      width: 9px;
+      border-radius: 45px;
+      position: absolute;
+      border: 1px solid var(--border);
+      background-color: #fff;
+      left: -15px;
+      top: 10px;
+    }
+    &:before {
+      content: "";
+      height: calc(100% - 10px);
+      width: 1px;
+      background-color: var(--border);
+      position: absolute;
+      left: -11px;
+      top: 10px;
+    }
+  }
+}

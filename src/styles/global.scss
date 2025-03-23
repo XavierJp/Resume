@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "FiraSans", sans-serif;
+  font-size: 1rem; /* 16px */
+  color: var(--font-main);
+}
+
+:root {
+  --font-main: #333;
+  --font-title: #000741;
+  --border: #000b6f;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Forum";
+  src: url("/src/fonts/Forum/Forum-Regular.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraSans";
+  src: url("/src/fonts/Fira_Sans/FiraSans-Thin.ttf") format("TrueType");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraSans";
+  src: url("/src/fonts/Fira_Sans/FiraSans-Regular.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraSans";
+  src: url("/src/fonts/Fira_Sans/FiraSans-Bold.ttf") format("TrueType");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charter";
+  src: url("/src/fonts/Fira_Sans/FiraSans-Italic.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+h1 {
+  font-family: "Forum", serif;
+  font-size: 3rem;
+  color: (var(--font-title));
+}
+
+h2 {
+  font-family: "Forum", serif;
+  color: var(--font-title);
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+
+h3 {
+  color: var(--font-title);
+  font-size: 1.05rem;
+}
+
+p {
+  margin: 10px auto;
+}
+
+.separator {
+  margin: auto;
+  border-radius: 45px;
+  height: 10px;
+  width: 10px;
+  border: 3px double var(--border);
+}
