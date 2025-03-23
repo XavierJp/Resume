@@ -18,12 +18,18 @@
     }
     &:before {
       content: "";
-      height: calc(100% - 10px);
+      height: calc(100% + 10px);
       width: 1px;
       background-color: var(--border);
       position: absolute;
       left: -11px;
       top: 10px;
+    }
+
+    &:last-of-type {
+      &:before {
+        height: calc(100% - 10px);
+      }
     }
   }
 }
