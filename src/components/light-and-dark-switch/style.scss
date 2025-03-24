@@ -1,0 +1,54 @@
+.light-and-dark-switch {
+  width: 45px;
+  height: 25px;
+  position: relative;
+  display: inline-block;
+  border-radius: 34px;
+  border: 1px solid light-dark(var(--light-border), var(--dark-border));
+  cursor: pointer;
+
+  > input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked ~ .slider {
+      left: 22px;
+    }
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    top: 2px;
+    left: 2px;
+    bottom: 0;
+    background-color: light-dark(var(--light-border), var(--dark-border));
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 34px;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    color: light-dark(var(--light-border), var(--dark-border));
+    font-weight: bolder;
+    line-height: 16px;
+    font-size: 20px;
+  }
+  &:before {
+    content: "☽";
+    top: 2px;
+    right: 4px;
+  }
+  &:after {
+    content: "☼";
+    top: 8px;
+    left: 4px;
+    line-height: 8px;
+    font-size: 17px;
+  }
+}

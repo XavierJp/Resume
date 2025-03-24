@@ -1,4 +1,5 @@
 ---
+import {LightAndDarkSwitch} from'@components/light-and-dark-switch';
 import '@styles/reset.css';
 import '@styles/utilities.css';
 import '@styles/grid-flex.css';
@@ -14,8 +15,10 @@ import '@styles/global.scss';
 		<meta name="generator" content={Astro.generator} />
 		<title>Xavier JOUPPE résumé</title>
 	</head>
-	<body class="container">
-		<slot />
+	<body>
+		<div class="container">
+			<slot />
+		</div>
 	</body>
 </html>
 

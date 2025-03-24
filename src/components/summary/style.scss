@@ -1,4 +1,4 @@
 div.summary {
-  border-top: 2px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border-top: 2px solid light-dark(var(--light-border), var(--dark-border));
+  border-bottom: 1px solid light-dark(var(--light-border), var(--dark-border));
 }

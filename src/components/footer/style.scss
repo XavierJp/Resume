@@ -1,4 +1,4 @@
 footer {
-  border-top: 3px solid var(--border);
+  border-top: 3px solid light-dark(var(--light-border), var(--dark-border));
   text-align: center;
 }

@@ -3,7 +3,7 @@ import "./style.scss";
 export const RightColumn = () => {
   return (
     <div className="right-column p-4">
-      <div>
+      <div className="block-group">
         <h2>expériences professionnelles</h2>
         <div className="block">
           <h3 className="flex justify-content-space-between">
@@ -64,7 +64,7 @@ export const RightColumn = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="block-group">
         <h2>projets et réalisations</h2>
 
         <div className="block">
