@@ -9,12 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^9.2.1",
+    "@astrojs/react": "^4.2.0",
     "@astrojs/ts-plugin": "^1.10.4",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "@astrojs/cloudflare": "^12.2.1",
-    "@astrojs/react": "^4.2.0",
-    "astro": "^5.2.5",
+    "astro": "^5.5.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
