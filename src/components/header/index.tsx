@@ -5,9 +5,12 @@ export const Header = () => {
     <header>
       <div className="flex flex-row justify-content-start align-items-center m-4">
         <img src="/src/assets/medaillon.jpg" />
-        <h1>
-          Xavier <strong>Jouppe</strong>
-        </h1>
+        <div>
+          <h1>
+            Xavier <strong>Jouppe</strong>
+          </h1>
+          <small>Rennes ∙ France</small>
+        </div>
       </div>
     </header>
   );

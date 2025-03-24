@@ -1,15 +1,20 @@
 header {
   margin: 20px 0;
 }
-h1 {
-  font-variant: small-caps;
-  font-weight: lighter;
+
+header > div > div {
   margin-left: 10px;
-  font-size: 4rem !important;
-  line-height: 6rem;
+  color: var(--font-title);
+}
+h1 {
+  font-weight: lighter;
+  font-size: 3rem !important;
+  line-height: 2.6rem;
+  font-weight: 100;
 
   strong {
-    font-weight: bolder;
+    font-weight: 600;
+    opacity: 0.9;
   }
 }
 
