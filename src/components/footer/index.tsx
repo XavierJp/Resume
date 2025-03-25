@@ -1,3 +1,4 @@
+import { NoPrint } from "@components/no-print";
 import "./style.scss";
 
 export const Footer = () => {
@@ -5,8 +6,10 @@ export const Footer = () => {
 
   return (
     <footer className="p-4">
-      <a href="https://github.com/XavierJp/Resume">fait</a> à Rennes 🇫🇷 avec{" "}
-      <a href="https://astro.build/">Astro</a> ∙ {y} ©{" "}
+      <NoPrint>
+        <a href="https://github.com/XavierJp/Resume">fait</a> à Rennes 🇫🇷 avec{" "}
+        <a href="https://astro.build/">Astro</a> ∙ {y} ©{" "}
+      </NoPrint>
     </footer>
   );
 };

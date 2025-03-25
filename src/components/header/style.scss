@@ -1,26 +1,26 @@
 header {
   padding: 10px 0;
-}
 
-header > div > div {
-  margin-left: 10px;
-  margin-top: 10px;
-  color: light-dark(var(--light-font-title), var(--dark-font-title));
-}
-h1 {
-  font-weight: lighter;
-  font-size: 3rem !important;
-  line-height: 2.6rem;
-  font-weight: 100;
-
-  strong {
-    font-weight: 600;
-    opacity: 0.9;
+  > div > div {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: light-dark(var(--light-font-title), var(--dark-font-title));
   }
-}
+  h1 {
+    font-weight: lighter;
+    font-size: 3rem !important;
+    line-height: 2.6rem;
+    font-weight: 100;
 
-img {
-  width: 90px;
-  border-radius: 100px;
-  border: 2px solid light-dark(var(--light-border), var(--dark-border));
+    strong {
+      font-weight: 600;
+      opacity: 0.9;
+    }
+  }
+
+  img {
+    width: 90px;
+    border-radius: 100px;
+    border: 2px solid light-dark(var(--light-border), var(--dark-border));
+  }
 }

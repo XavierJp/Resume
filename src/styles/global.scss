@@ -118,3 +118,12 @@ p {
     margin: 2.5px;
   }
 }
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+  .no-print {
+    display: none;
+  }
+}

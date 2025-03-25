@@ -5,9 +5,15 @@ export const LeftColumn = () => {
     <div className="left-column p-4">
       <div>
         <h2>expertise</h2>
-        <p>Produit</p>
+        <p>Gestion d’équipe</p>
         <div className="separator" />
-        <p>Développement</p>
+        <p>Conception produit</p>
+        <div className="separator" />
+        <p>
+          Développement web,
+          <br />
+          Architecture logicielle,
+        </p>
       </div>
       <br />
 
