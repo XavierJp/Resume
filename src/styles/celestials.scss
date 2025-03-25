@@ -1,0 +1,150 @@
+.space {
+  background-color: var(--dark-bkcg);
+}
+
+h1 {
+  font-weight: 100;
+  strong {
+    font-weight: 900;
+  }
+}
+
+img.logo {
+  width: 320px;
+  max-width: calc(100% - 20px);
+  margin: 0;
+  border-radius: 100%;
+}
+.planet {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 300px;
+    width: 300px;
+    box-shadow: inset 10px 10px 35px #673b0c82;
+    border-radius: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 300px;
+    width: 300px;
+    box-shadow: inset -30px -17px 35px #003554;
+    border-radius: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#comet {
+  position: absolute;
+  width: 180px;
+  max-width: calc(100% - 20px);
+  top: -20px;
+  right: 200px;
+
+  > img {
+    position: absolute;
+    width: 100%;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 64.5px;
+    right: 156px;
+    height: 18px;
+    width: 18px;
+    box-shadow: inset 5px -3px 4px -4px #f00;
+    border-radius: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+div.parallax__layer > .celestial {
+  position: absolute;
+  border-radius: 30px;
+}
+div.parallax__layer > .star {
+  background-color: #8bdcff;
+  box-shadow: 0 0 40px 3px rgba(0, 137, 195);
+  border-radius: 30px;
+
+  &:nth-of-type(10n) {
+    background-color: #ff0000;
+  }
+
+  &:nth-of-type(4n) {
+    background-color: #fffcef;
+  }
+
+  &:nth-of-type(14n) {
+    box-shadow: 0 0 100px 30px #000000;
+  }
+  &:nth-of-type(20n) {
+    box-shadow: 0 0 150px 50px #0d0025;
+  }
+}
+div.parallax__layer > .red-planet {
+  background-color: #e65c00;
+  border: 3px solid #962300;
+  border-left: none;
+  border-top: none;
+}
+div.parallax__layer > .blue-planet {
+  background-color: #e6d700;
+  border: 3px solid #c28500;
+  border-left: none;
+  border-top: none;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translate(0);
+  z-index: 4;
+  pointer-events: none;
+}
+.parallax__layer--back {
+  transform: translateZ(-2px) scale(3);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.parallax__layer--deep {
+  transform: translateZ(-4px) scale(5);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.parallax__layer--ganymede {
+  transform: translateZ(-3px) scale(4);
+  z-index: 1;
+}
+
+.parallax__layer--comet {
+  transform: translateZ(-1px) scale(2);
+  z-index: 3;
+  pointer-events: none;
+}

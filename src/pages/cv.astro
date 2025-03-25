@@ -1,0 +1,20 @@
+---
+import {Header} from '@components/header/index.tsx';
+import {Summary} from '@components/summary/index.tsx';
+import {Footer} from '@components/footer/index.tsx';
+import {RightColumn} from '@components/right-column/index.tsx';
+import {LeftColumn} from '@components/left-column/index.tsx';
+import ResumeLayout from '@layouts/ResumeLayout.astro';
+--- 
+
+	
+<ResumeLayout>
+	<Header />
+	<Summary />
+	<div class="flex">
+		<LeftColumn />
+		<RightColumn />
+	</style>
+	</div>
+	<Footer />
+</ResumeLayout>

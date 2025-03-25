@@ -1,20 +1,98 @@
 ---
-import {Header} from '@components/header/index.tsx';
-import {Summary} from '@components/summary/index.tsx';
-import {Footer} from '@components/footer/index.tsx';
-import {RightColumn} from '@components/right-column/index.tsx';
-import {LeftColumn} from '@components/left-column/index.tsx';
-import ResumeLayout from '@layouts/ResumeLayout.astro';
---- 
+import GanymedeLayout from "@layouts/GanymedeLayout.astro";
+---
 
-	
-<ResumeLayout>
-	<Header />
-	<Summary />
-	<div class="flex">
-		<LeftColumn />
-		<RightColumn />
-	</style>
-	</div>
-	<Footer />
-</ResumeLayout>
+<GanymedeLayout>
+<div id="space" class="parallax">
+  <div class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--ganymede">
+    <div class="planet" title="Why this page ? Do I really need a good reason ? \n I guess I just wanted to carve a place of my own, my corner of the internet, to scroll and relax">
+      <img class="logo" src="../../src/assets/celestials/ganymede.svg" />
+    </div>
+  </div>
+  <div class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--comet">
+    <div id="comet">
+      <img src="../../src/assets/celestials/comet.svg" />
+    </div>
+  </div>
+  <div
+    id="star-container"
+    class="parallax__layer parallax__layer--deep"
+  ></div>
+  <div
+    id="planet-small-container"
+    class="parallax__layer parallax__layer--back"
+  ></div>
+  <div
+    id="planet-medium-container"
+    class="parallax__layer parallax__layer--base"
+  ></div>
+</div>
+</GanymedeLayout>
+<script>
+  function starFactory(windowWidth, windowHeight) {
+    var stars = document.getElementById("star-container");
+    var smallPlanets = document.getElementById("planet-small-container");
+    var mediumPlanets = document.getElementById("planet-medium-container");
+
+    var celestials = [];
+
+    function nebulae(
+      count,
+      sizeMultiplier,
+      sizeOffset,
+      className,
+      anchorNode
+    ) {
+      for (var i = 0; i < count; i++) {
+        var size = sizeMultiplier * Math.random() + sizeOffset;
+        var posX = Math.random();
+        var posY = Math.random();
+        var newStar = document.createElement("div");
+        newStar.className = className + " celestial";
+        newStar.style.width = `${size}px`;
+        newStar.style.height = `${size}px`;
+        newStar.style.top = `${posX * windowHeight}px`;
+        newStar.style.left = `${posY * windowWidth}px`;
+        anchorNode.appendChild(newStar);
+        celestials.push({ element: newStar, X: posX, Y: posY });
+      }
+    }
+
+
+    nebulae(400, 3, 1, "star", stars);
+    nebulae(100, 5, 2, "star", stars);
+    nebulae(4, 6, 8, "red-planet", smallPlanets);
+    nebulae(2, 8, 8, "blue-planet", mediumPlanets);
+
+    return {
+      reDraw: function () {
+        var newWidth = window.innerWidth;
+        var newHeight = window.innerHeight * 1.1;
+
+        for (var i = 0; i < celestials.length; i++) {
+          var celestial = celestials[i];
+          var newStar = celestial.element;
+          newStar.style.top = `${celestial.X * newHeight}px`;
+          newStar.style.left = `${celestial.Y * newWidth}px`;
+        }
+      },
+    };
+  }
+
+  (function draw() {
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight * 1.1;
+
+    var orion = starFactory(windowWidth, windowHeight);
+
+    var comet = document.getElementById("comet");
+    var space = document.getElementById("space");
+    space?.addEventListener("scroll", function (e) {
+      var run = (space.scrollTop / space.scrollHeight) * 100;
+      comet.style.top = `${(run * 50) / 2 - 20}px`;
+      comet.style.right = `${run * 50 + 200}px`;
+    });
+
+    window.addEventListener("resize", orion.reDraw);
+  })();
+</script>
