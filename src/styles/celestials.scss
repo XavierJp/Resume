@@ -19,6 +19,7 @@ img.logo {
 }
 .planet {
   position: relative;
+  z-index: 0;
 
   &:before {
     position: absolute;
@@ -44,6 +45,30 @@ img.logo {
     border-radius: 1000px;
     margin: 0;
     padding: 0;
+  }
+}
+
+.perspective {
+  z-index: 1000;
+  margin-top: 110vh;
+  color: var(--dark-font-main);
+  transform: perspective(200px) rotateX(25deg);
+  text-align: justify;
+  font-weight: light;
+  font-size: 2rem;
+  font-size: 350%;
+  bottom: 0;
+
+  a {
+    font-weight: bolder;
+    text-decoration: none;
+
+    &:visited {
+      color: var(--dark-font-main);
+    }
+    &:hover {
+      text-shadow: 0 0 30px #8bdcff;
+    }
   }
 }
 
@@ -146,6 +171,10 @@ div.parallax__layer > .blue-planet {
 
 .parallax__layer--ganymede {
   transform: translateZ(-3px) scale(4);
+  z-index: 1;
+}
+.parallax__layer--text {
+  transform: translateZ(-1px) scale(2);
   z-index: 1;
 }
 
