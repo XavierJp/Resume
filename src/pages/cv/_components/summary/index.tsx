@@ -5,7 +5,7 @@ import { NoPrint } from "@components/no-print";
 export const Summary = () => {
   return (
     <NoPrint>
-      <div className="summary p-4 flex justify-content-space-between align-items-center">
+      <div className="summary p-4 flex justify-content-space-between align-items-center gap-4">
         <div>Actuellement en recherche d’emploi, à Rennes, Paris ou Nantes</div>
         <LightAndDarkSwitch />
       </div>

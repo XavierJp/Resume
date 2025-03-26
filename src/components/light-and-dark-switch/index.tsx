@@ -11,7 +11,15 @@ export const LightAndDarkSwitch = () => (
         __html: `
       <input id="color-mode" type="checkbox" name="color-mode" onclick="toggleLightDarkMode()"></input>
       <div class="slider"></div>
-      <script>function toggleLightDarkMode() {if(document.getElementById('color-mode').checked) { document.body.classList.add('dark') } else { document.body.classList.remove('dark') }}</script>
+      <script>
+        function toggleLightDarkMode() {if(document.getElementById('color-mode').checked) { document.body.style.colorScheme = 'dark' } else { document.body.style.colorScheme = 'light' }}
+        
+        (function () {
+          if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.getElementById('color-mode').checked = true;
+          }
+        })();
+      </script>
       `,
       }}
     ></label>
