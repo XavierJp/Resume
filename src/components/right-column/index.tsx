@@ -73,7 +73,7 @@ export const RightColumn = () => {
             <span>2020 ∙ 2025</span>
           </h3>
           <div className="flex justify-content-space-between gap-3">
-            <img src="../../src/assets/sites/annuaire.png" />
+            <img src="/resume/sites/annuaire.png" />
             <div className="flex flex-column align-items-end">
               <div className="tags flex flex-row justify-content-end gap-1">
                 <small>service public</small>
@@ -99,7 +99,7 @@ export const RightColumn = () => {
             <span>2024</span>
           </h3>
           <div className="flex justify-content-space-between gap-3">
-            <img src="../../src/assets/sites/cuicui.png" />
+            <img src="/resume/sites/cuicui.png" />
             <div className="flex flex-column align-items-end">
               <div className="tags flex flex-row justify-content-end gap-1">
                 <small>site vitrine</small>
@@ -118,7 +118,7 @@ export const RightColumn = () => {
             <span>2020</span>
           </h3>
           <div className="flex justify-content-space-between gap-3">
-            <img src="../../src/assets/sites/apigouv.png" />
+            <img src="/resume/sites/apigouv.png" />
             <div className="flex flex-column align-items-end">
               <div className="tags flex flex-row justify-content-end gap-1">
                 <small>service public</small>
@@ -143,7 +143,7 @@ export const RightColumn = () => {
             <span>2018</span>
           </h3>
           <div className="flex justify-content-space-between gap-3">
-            <img src="../../src/assets/sites/manakin.png" />
+            <img src="/resume/sites/manakin.png" />
             <div className="flex flex-column align-items-end">
               <div className="tags flex flex-row justify-content-end gap-1">
                 <small>Site vitrine</small>

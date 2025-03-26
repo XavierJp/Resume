@@ -1,5 +1,7 @@
+html,
+body,
 .space {
-  background-color: var(--dark-bkcg);
+  background-color: var(--dark-bckgd) !important;
 }
 
 h1 {
@@ -81,7 +83,11 @@ div.parallax__layer > .star {
   border-radius: 30px;
 
   &:nth-of-type(10n) {
-    background-color: #ff0000;
+    background-color: rgb(255, 191, 0);
+  }
+
+  &:nth-of-type(25n) {
+    background-color: rgb(255, 72, 0);
   }
 
   &:nth-of-type(4n) {
