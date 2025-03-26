@@ -1,53 +1,59 @@
 ---
-import GanymedeLayout from "@layouts/GanymedeLayout.astro";
+import DefaultLayout from "@layouts/DefaultLayout.astro";
 ---
 
-<GanymedeLayout>
+<DefaultLayout>
   <div id="space" class="parallax">
-    <div class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--ganymede">
+    <div
+      class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--ganymede"
+    >
       <div class="planet" title="Scroll, relax">
         <img class="logo" src="/celestials/ganymede.svg" />
       </div>
     </div>
-    <div class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--text">
+    <div
+      class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--text"
+    >
       <div class="perspective">
-        Tu préfères<br/>
+        Tu préfères<br />
         <a href="/haiku">un haiku</a> ou <a href="/cv">un CV</a> ?
       </div>
     </div>
-    <div class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--comet">
+    <div
+      class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--comet"
+    >
       <div id="comet">
         <img src="/celestials/comet.svg" />
       </div>
+    </div>
+    <div id="star-container" class="parallax__layer parallax__layer--deep">
+    </div>
+    <div
+      id="planet-small-container"
+      class="parallax__layer parallax__layer--back"
+    >
+    </div>
+    <div
+      id="planet-medium-container"
+      class="parallax__layer parallax__layer--base"
+    >
+    </div>
   </div>
-  <div
-    id="star-container"
-    class="parallax__layer parallax__layer--deep"
-  ></div>
-  <div
-    id="planet-small-container"
-    class="parallax__layer parallax__layer--back"
-  ></div>
-  <div
-    id="planet-medium-container"
-    class="parallax__layer parallax__layer--base"
-  ></div>
-</div>
-</GanymedeLayout>
+</DefaultLayout>
 <script>
-  function starFactory(windowWidth, windowHeight) {
+  function starFactory(windowWidth: number, windowHeight: number) {
     var stars = document.getElementById("star-container");
     var smallPlanets = document.getElementById("planet-small-container");
     var mediumPlanets = document.getElementById("planet-medium-container");
 
-    var celestials = [];
+    var celestials = [] as any;
 
     function nebulae(
-      count,
-      sizeMultiplier,
-      sizeOffset,
-      className,
-      anchorNode
+      count: number,
+      sizeMultiplier: number,
+      sizeOffset: number,
+      className: string,
+      anchorNode: any
     ) {
       for (var i = 0; i < count; i++) {
         var size = sizeMultiplier * Math.random() + sizeOffset;
@@ -63,7 +69,6 @@ import GanymedeLayout from "@layouts/GanymedeLayout.astro";
         celestials.push({ element: newStar, X: posX, Y: posY });
       }
     }
-
 
     nebulae(400, 3, 1, "star", stars);
     nebulae(100, 5, 2, "star", stars);
@@ -94,6 +99,9 @@ import GanymedeLayout from "@layouts/GanymedeLayout.astro";
     var comet = document.getElementById("comet");
     var space = document.getElementById("space");
     space?.addEventListener("scroll", function (e) {
+      if (!comet || !space) {
+        return;
+      }
       var run = (space.scrollTop / space.scrollHeight) * 100;
       comet.style.top = `${(run * 50) / 2 - 20}px`;
       comet.style.right = `${run * 50 + 200}px`;

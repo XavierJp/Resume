@@ -1,5 +1,6 @@
 header {
   padding: 10px 0;
+  border-bottom: 2px solid light-dark(var(--light-border), var(--dark-border));
 
   > div > div {
     margin-left: 10px;

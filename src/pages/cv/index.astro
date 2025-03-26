@@ -1,0 +1,19 @@
+---
+import { Header } from "src/pages/cv/_components/header";
+import { Summary } from "src/pages/cv/_components/summary";
+import { Footer } from "src/pages/cv/_components/footer";
+import { MainColumn } from "src/pages/cv/_components/columns/main-column";
+import { SideColumn } from "src/pages/cv/_components/columns/side-column";
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import { TwoColumnsLayout } from "./_components/columns/two-columns-layout";
+---
+
+<DefaultLayout>
+  <Header />
+  <Summary />
+  <TwoColumnsLayout>
+    <SideColumn />
+    <MainColumn />
+  </TwoColumnsLayout>
+</DefaultLayout>
+<Footer />

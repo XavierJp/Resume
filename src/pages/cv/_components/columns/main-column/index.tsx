@@ -1,8 +1,8 @@
 import "./style.scss";
 
-export const RightColumn = () => {
+export const MainColumn = () => {
   return (
-    <div className="right-column p-4">
+    <div className="main-column p-4">
       <div className="block-group">
         <h2>expériences professionnelles</h2>
         <div className="block">

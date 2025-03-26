@@ -101,8 +101,39 @@ p {
   margin: 10px auto;
 }
 
+a {
+  color: light-dark(
+    var(--light-font-title),
+    var(--dark-font-title)
+  ); /* Set link color to a blue */
+  text-decoration: underline; /* Add an underline on hover */
+
+  &:hover,
+  &:focus {
+    color: light-dark(var(--light-font-title), var(--dark-font-title));
+    opacity: 85%;
+  }
+
+  &:active {
+    color: inherit;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:focus {
+    outline: 2px solid #ffbf47; /* Add focus outline for accessibility */
+    outline-offset: 2px;
+  }
+
+  @media print {
+    text-decoration: none; /* Remove the default underline */
+  }
+}
+
 .separator {
-  margin: auto;
+  margin: 15px auto;
   border-radius: 45px;
   height: 10px;
   width: 10px;

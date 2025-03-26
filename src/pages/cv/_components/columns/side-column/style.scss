@@ -1,0 +1,21 @@
+.side-column {
+  width: 25%;
+
+  .github {
+    > svg {
+      fill: light-dark(var(--light-border), var(--dark-border));
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* Styles for small screens */
+    width: 100%;
+    border-top: 1px solid light-dark(var(--light-border), var(--dark-border));
+  }
+
+  @media print {
+    width: 100%;
+    border-top: 1px solid light-dark(var(--light-border), var(--dark-border));
+  }
+}

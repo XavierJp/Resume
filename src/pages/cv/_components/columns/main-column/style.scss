@@ -1,5 +1,14 @@
-.right-column {
+.main-column {
   width: 77%;
+
+  @media only screen and (max-width: 768px) {
+    /* Styles for small screens */
+    width: 100%;
+  }
+
+  @media print {
+    width: 100%;
+  }
 
   .block-group {
     position: relative;
