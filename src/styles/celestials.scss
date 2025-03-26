@@ -60,12 +60,18 @@ img.logo {
   a {
     font-weight: bolder;
     text-decoration: none;
+    text-shadow: 0 0 15px #8bdcff;
+    transition: all 75ms linear;
 
     &:visited {
       color: var(--dark-font-main);
     }
+    &:focus {
+      outline: none;
+    }
     &:hover {
-      text-shadow: 0 0 30px #8bdcff;
+      opacity: 100%;
+      text-shadow: 0 0 25px #8bdcff;
     }
   }
 }
