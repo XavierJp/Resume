@@ -3,41 +3,35 @@ import DefaultLayout from "@layouts/DefaultLayout.astro";
 ---
 
 <DefaultLayout>
-  <div id="space" class="parallax">
+  <div id="space">
     <div
-      class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--ganymede"
+      id="planet"
+      class="flex flex-column justify-content-center align-items-center layer layer-ganymede"
     >
-      <div class="planet" title="Scroll, relax">
+      <div title="Scroll, relax">
         <img class="logo" src="/celestials/ganymede.svg" />
       </div>
     </div>
     <div
-      class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--text"
+      id="intro-text"
+      class="flex flex-column justify-content-center align-items-center layer layer-text"
     >
-      <div class="perspective">
+      <div>
         Tu préfères<br />
         <a href="/haiku">un haiku</a> ou <a href="/cv">un CV</a> ?
       </div>
     </div>
     <div
-      class="flex flex-column justify-content-center align-items-center parallax__layer parallax__layer--comet"
+      id="comet"
+      class="flex flex-column justify-content-center align-items-center layer layer-comet"
     >
-      <div id="comet">
+      <div>
         <img src="/celestials/comet.svg" />
       </div>
     </div>
-    <div id="star-container" class="parallax__layer parallax__layer--deep">
-    </div>
-    <div
-      id="planet-small-container"
-      class="parallax__layer parallax__layer--back"
-    >
-    </div>
-    <div
-      id="planet-medium-container"
-      class="parallax__layer parallax__layer--base"
-    >
-    </div>
+    <div id="star-container" class="layer layer-deep"></div>
+    <div id="planet-small-container" class="layer layer-back"></div>
+    <div id="planet-medium-container" class="layer layer-base"></div>
   </div>
 </DefaultLayout>
 <script>
