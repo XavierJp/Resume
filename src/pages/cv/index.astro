@@ -2,18 +2,118 @@
 import { Header } from "src/pages/cv/_components/header";
 import { Summary } from "src/pages/cv/_components/summary";
 import { Footer } from "src/pages/cv/_components/footer";
+import { BreakPointContainer } from "src/pages/cv/_components/break-point-container";
 import { MainColumn } from "src/pages/cv/_components/columns/main-column";
 import { SideColumn } from "src/pages/cv/_components/columns/side-column";
 import DefaultLayout from "@layouts/DefaultLayout.astro";
 import { TwoColumnsLayout } from "./_components/columns/two-columns-layout";
+
+const resume = {
+  contact: [],
+  skills: [],
+  education: [],
+  experiences: [
+    {
+      title: "Intrapreneur",
+      period: "2020 ∙ 2025",
+      company: "Direction Intérministérielle du Numérique",
+      location: "Paris ∙ Rennes",
+      description:
+        "Gestion d’une équipe de 6 prestataires et d’un budget annuel de 350 000 euros, dédiés à la construction du produit Annuaire des Entreprises.",
+      achievements: [
+        "Organisation de l’équipe et priorisation de la feuille de route et des évolutions techniques.",
+        "Augmentation du volume de visite jusqu’à 450 000 visites mensuelles.",
+        "Augmentation de 150% des principales mesures d’usage et d’impact.",
+      ],
+    },
+    {
+      title: "Product Manager",
+      period: "2018 ∙ 2020",
+      company: "Skillup",
+      location: "Paris",
+      description:
+        "Premier Product Manager sur un produit SaaS B2B dédié à la formation en entreprise. Pilotage du développement du produit et création d’une culture produit au sein de l'équipe. Mise en place de la méthodologie et élaboration -en équipe- des roadmaps en regard des objectifs stratégiques",
+      achievements: [],
+    },
+    {
+      title: "Ingénieur recherche en machine learning",
+      period: "2016 ∙ 2018",
+      company: "SmartAdServer",
+      location: "Paris",
+      description:
+        "Première expérience professionnelle au sein d’une équipe de machine learning appliquée. Découverte du développement frontend lors de la conception d’outils de visualisationde résultat d’algorithmes (React, D3.js).",
+      achievements: [],
+    },
+  ],
+  projects: [
+    {
+      name: "Annuaire des Entreprises",
+      timespan: "2020 ∙ 2025",
+      tags: [
+        "service public",
+        "next.js",
+        "ansible",
+        "redis",
+        "elasticsearch",
+        "react",
+        "python",
+        "fastAPI",
+        "Node.js",
+        "OVH",
+      ],
+      description: "description",
+      img: "/resume/sites/annuaire.png",
+    },
+    {
+      name: "CuiCuiAsso",
+      timespan: "2024",
+      img: "/resume/sites/cuicui.png",
+      tags: ["site vitrine", "11ty", "Cloudflare"],
+      description: "description",
+    },
+    {
+      name: "Api.gouv.fr",
+      timespan: "2020",
+      img: "/resume/sites/apigouv.png",
+      tags: [
+        "service public",
+        "refonte visuelle",
+        "next.js",
+        "react",
+        "Node.js",
+        "OVH",
+      ],
+      description:
+        "Refonte visuelle du catalogue des API du secteur public en France. Migration d’un site vitrine en Jekyll vers React.",
+    },
+    {
+      name: "ManakinProduction",
+      timespan: "2018",
+      img: "/resume/sites/manakin.png",
+      tags: [
+        "Site vitrine",
+        "Gatsby",
+        "React",
+        "Netlify",
+        "Contentful",
+        "Jamstack",
+        "Brutalist design",
+      ],
+      description:
+        "Conception d’un site vitrine pour Manakin production. Structure de production de projets artistiques dans le spectacle vivant.",
+    },
+  ],
+};
 ---
 
 <DefaultLayout>
-  <Header />
-  <Summary />
-  <TwoColumnsLayout>
-    <SideColumn />
-    <MainColumn />
-  </TwoColumnsLayout>
+  <BreakPointContainer>
+    <Header />
+    <Summary />
+    <TwoColumnsLayout>
+      <SideColumn />
+      <MainColumn experiences={resume.experiences} projects={resume.projects} />
+    </TwoColumnsLayout>
+  </BreakPointContainer>
 </DefaultLayout>
 <Footer />

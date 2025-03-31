@@ -6,8 +6,4 @@
     /* Styles for small screens */
     flex-direction: column-reverse;
   }
-
-  @media print {
-    flex-direction: column-reverse;
-  }
 }

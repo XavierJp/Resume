@@ -1,0 +1,8 @@
+#break-point-container {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+
+  @media only screen and (max-width: 768px) {
+  }
+}

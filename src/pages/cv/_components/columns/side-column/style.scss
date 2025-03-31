@@ -13,9 +13,4 @@
     width: 100%;
     border-top: 1px solid light-dark(var(--light-border), var(--dark-border));
   }
-
-  @media print {
-    width: 100%;
-    border-top: 1px solid light-dark(var(--light-border), var(--dark-border));
-  }
 }

@@ -53,14 +53,14 @@ import DefaultLayout from "@layouts/DefaultLayout.astro";
         var size = sizeMultiplier * Math.random() + sizeOffset;
         var posX = Math.random();
         var posY = Math.random();
-        var newStar = document.createElement("div");
-        newStar.className = className + " celestial";
-        newStar.style.width = `${size}px`;
-        newStar.style.height = `${size}px`;
-        newStar.style.top = `${posX * windowHeight}px`;
-        newStar.style.left = `${posY * windowWidth}px`;
-        anchorNode.appendChild(newStar);
-        celestials.push({ element: newStar, X: posX, Y: posY });
+        var newCelestial = document.createElement("div");
+        newCelestial.className = className + " celestial";
+        newCelestial.style.width = `${size}px`;
+        newCelestial.style.height = `${size}px`;
+        newCelestial.style.top = `${posX * windowHeight}px`;
+        newCelestial.style.left = `${posY * windowWidth}px`;
+        anchorNode.appendChild(newCelestial);
+        celestials.push({ element: newCelestial, X: posX, Y: posY });
       }
     }
 
