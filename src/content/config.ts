@@ -1,4 +1,4 @@
-import { z } from "astro:content";
+import { defineCollection, z } from "astro:content";
 
 // Define the schema types directly
 const experienceSchema = z.object({
@@ -24,7 +24,7 @@ const contactSchema = z.object({
 });
 
 // Define the complete resume schema
-export const resumeSchema = z.object({
+const resumeSchema = z.object({
   intro: z.string(),
   contact: z.object({
     title: z.string(),
@@ -48,10 +48,29 @@ export const resumeSchema = z.object({
   }),
 });
 
+// Define poems collection schema
+const poemsSchema = z.object({ haikus: z.array(z.string()) });
+
+const poemsCollection = defineCollection({
+  type: "content",
+  schema: poemsSchema,
+});
+
+// Define collections
+const resumeCollection = defineCollection({
+  type: "content",
+  schema: resumeSchema,
+});
+
+// Export collections
+export const collections = {
+  resume: resumeCollection,
+  poems: poemsCollection,
+};
+
 // Infer the types from the schema
 export type ResumeType = z.infer<typeof resumeSchema>;
-
-// Helper types for specific sections
 export type ExperienceItem = z.infer<typeof experienceSchema>;
 export type ProjectItem = z.infer<typeof projectSchema>;
 export type ContactItem = z.infer<typeof contactSchema>;
+export type PoemsType = z.infer<typeof poemsSchema>;

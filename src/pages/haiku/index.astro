@@ -1,15 +1,15 @@
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro";
+import { getEntry } from "astro:content";
 
-// Split the haiku into individual words while preserving line breaks
-const haiku = [
-  "Un milliers d'étoiles",
-  "Logique silencieuse",
-  "Un code prend vie",
-];
+export const prerender = true;
+const haikusEntry = await getEntry("poems", "haikus");
+const haikusList = haikusEntry?.data.haikus[0];
 
 // Process the haiku into a nested array of words
-const linesWithWords = haiku.map((line) => line.split(" "));
+const linesWithWords = (haikusList || "")
+  .split("\n")
+  .map((line) => line.split(" "));
 ---
 
 <DefaultLayout>
@@ -67,6 +67,7 @@ const linesWithWords = haiku.map((line) => line.split(" "));
     words.forEach((word, index) => {
       // Add a delay of 0.5 seconds per word
       const delay = index * 0.2;
+      //@ts-ignore
       word.style.animationDelay = `${delay}s`;
     });
   });
