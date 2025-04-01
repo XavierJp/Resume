@@ -7,6 +7,7 @@ export const LightAndDarkSwitch = () => (
       className="light-and-dark-switch"
       aria-hidden="true"
       htmlFor="color-mode"
+      tabIndex={0}
       dangerouslySetInnerHTML={{
         __html: `
       <input id="color-mode" type="checkbox" name="color-mode" onclick="toggleLightDarkMode()"></input>

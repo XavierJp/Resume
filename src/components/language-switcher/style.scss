@@ -1,0 +1,35 @@
+#language-switcher {
+  display: flex;
+  margin: 0;
+  padding: 2px;
+  gap: 3px;
+  border-radius: 34px;
+  border: 1px solid light-dark(var(--light-border), var(--dark-border));
+  overflow: hidden;
+
+  svg {
+    height: 20px;
+  }
+
+  a {
+    opacity: 40%;
+
+    &.active {
+      opacity: 100%;
+    }
+
+    &:first-of-type {
+      border-radius: 12px 0 0 12px;
+      overflow: hidden;
+    }
+
+    &:last-of-type {
+      border-radius: 0 12px 12px 0;
+      overflow: hidden;
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}

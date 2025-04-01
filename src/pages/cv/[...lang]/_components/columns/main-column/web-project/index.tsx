@@ -20,7 +20,7 @@ export const WebProject = (props: IProps) => {
         <div className="flex flex-column align-items-end">
           <div className="tags flex flex-row justify-content-end gap-1">
             {props.tags.map((t) => (
-              <span>{t}</span>
+              <small>{t}</small>
             ))}
           </div>
           <small>

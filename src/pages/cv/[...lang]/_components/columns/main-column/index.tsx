@@ -1,20 +1,14 @@
-import type { IExperience, IProject } from "src/types/resume";
 import { Experience } from "./experience";
 import "./style.scss";
 import { WebProject } from "./web-project";
+import type { ResumeType } from "src/content/config";
 
-export const MainColumn = ({
-  experiences,
-  projects,
-}: {
-  experiences: IExperience[];
-  projects: IProject[];
-}) => {
+export const MainColumn = ({ resume }: { resume: ResumeType }) => {
   return (
     <div className="main-column p-4">
       <div className="block-group">
-        <h2>expériences professionnelles</h2>
-        {experiences.map(
+        <h2>{resume.experiences.title}</h2>
+        {resume.experiences.data.map(
           ({ title, period, company, location, description, achievements }) => (
             <Experience
               title={title}
@@ -28,8 +22,8 @@ export const MainColumn = ({
         )}
       </div>
       <div className="block-group">
-        <h2>projets et réalisations</h2>
-        {projects.map((projet) => (
+        <h2>{resume.projects.title}</h2>
+        {resume.projects.data.map((projet) => (
           <WebProject
             name={projet.name}
             timespan={projet.timespan}

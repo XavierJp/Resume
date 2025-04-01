@@ -1,0 +1,42 @@
+---
+import { Header } from "src/pages/cv/[...lang]/_components/header";
+import { Summary } from "src/pages/cv/[...lang]/_components/summary";
+import { Footer } from "src/pages/cv/[...lang]/_components/footer";
+import { BreakPointContainer } from "src/pages/cv/[...lang]/_components/break-point-container";
+import { MainColumn } from "src/pages/cv/[...lang]/_components/columns/main-column";
+import { SideColumn } from "src/pages/cv/[...lang]/_components/columns/side-column";
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import { TwoColumnsLayout } from "./_components/columns/two-columns-layout";
+import { getEntry } from "astro:content";
+
+const LANGUAGES = ["fr", "en"];
+
+function isValidLanguage(lang: string): boolean {
+  return LANGUAGES.includes(lang);
+}
+
+export function getStaticPaths() {
+  return LANGUAGES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+if (!isValidLanguage(lang)) {
+  return Astro.redirect("/cv/fr"); // Redirect to default French version
+}
+
+// Fetch resume data based on language
+const resumeEntry = await getEntry("resume", lang);
+const resume = resumeEntry?.data;
+---
+
+<DefaultLayout>
+  <BreakPointContainer>
+    <Header />
+    <Summary lang={lang} resume={resume} />
+    <TwoColumnsLayout>
+      <SideColumn resume={resume} />
+      <MainColumn resume={resume} />
+    </TwoColumnsLayout>
+    <Footer />
+  </BreakPointContainer>
+</DefaultLayout>

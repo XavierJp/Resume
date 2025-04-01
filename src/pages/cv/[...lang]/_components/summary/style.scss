@@ -1,0 +1,12 @@
+div.summary {
+  border-bottom: 1px solid light-dark(var(--light-border), var(--dark-border));
+
+  > div:first-of-type {
+    flex-grow: 1;
+  }
+
+  div.print-button {
+    cursor: pointer;
+    color: light-dark(var(--light-border), var(--dark-border));
+  }
+}
