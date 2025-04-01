@@ -27,6 +27,7 @@ if (!isValidLanguage(lang)) {
 // Fetch resume data based on language
 const resumeEntry = await getEntry("resume", lang);
 const resume = resumeEntry?.data;
+export const prerender = true;
 ---
 
 <DefaultLayout>
