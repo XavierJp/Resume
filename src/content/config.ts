@@ -16,6 +16,12 @@ const projectSchema = z.object({
   tags: z.array(z.string()),
   description: z.string(),
   img: z.string(),
+  links: z
+    .object({
+      href: z.string().optional(),
+      github: z.string(),
+    })
+    .optional(),
 });
 
 const contactSchema = z.object({

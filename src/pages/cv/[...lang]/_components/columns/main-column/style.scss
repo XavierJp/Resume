@@ -12,7 +12,7 @@
 
     &:before {
       content: "";
-      height: 100%;
+      height: calc(100% + 20px);
       width: 1px;
       border-left: 1px solid light-dark(var(--light-border), var(--dark-border));
       position: absolute;
@@ -34,10 +34,17 @@
       }
     }
 
-    &:last-of-type {
-      border-top: 1px solid light-dark(var(--light-border), var(--dark-border));
-      padding-top: 20px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid
+        light-dark(var(--light-border), var(--dark-border));
+      margin-bottom: 20px;
 
+      @media print {
+        border-bottom: none;
+      }
+    }
+
+    &:last-of-type {
       &:before {
         height: calc(100% - 40px);
         top: 0;

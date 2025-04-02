@@ -1,3 +1,4 @@
+import { PageBreakForPrint } from "@components/page-break-for-print";
 import { Experience } from "./experience";
 import "./style.scss";
 import { WebProject } from "./web-project";
@@ -21,16 +22,11 @@ export const MainColumn = ({ resume }: { resume: ResumeType }) => {
           )
         )}
       </div>
+      <PageBreakForPrint />
       <div className="block-group">
         <h2>{resume.projects.title}</h2>
         {resume.projects.data.map((projet) => (
-          <WebProject
-            name={projet.name}
-            timespan={projet.timespan}
-            tags={projet.tags}
-            description={projet.description}
-            img={projet.img}
-          />
+          <WebProject {...projet} />
         ))}
       </div>
     </div>
