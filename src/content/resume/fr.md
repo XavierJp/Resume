@@ -32,13 +32,18 @@ experiences:
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Création du projet puis management de l’équipe en charge de l’Annuaire des Entreprises, site public de consultation des données ouvertes des entreprises en France.
+        Création puis développement de l’Annuaire des Entreprises, premier site public de consultation de données d’entreprises. Recherche de sponsors au sein de l’administration, élaboration puis execution de la stratégie et passage à l'échelle :
       achievements:
-        - "Conception du produit avec une approche centrée utilisateurs : site public pour les agents publics, entreprises et citoyens, API ouverte pour les développeurs"
-        - Recherche de financement et de sponsors au sein de l’administration
-        - "Passage à l'échelle du projet, depuis sa création jusqu'à devenir un des dix sites pulbic les plus visités de France avec 8M de visites et 150M de requêtes mensuelles en 2025. Problématiques rencontrées : scalabilité de l’infrastructure, performances applicatives et sujets RH"
-        - Recrutement puis direction d’une équipe d’une dizaine de personnes pour assurer le developpement du projet (bizdev, SEO & communication, chargée de support, UX designer, data engineer, devops, developpeur fullstack)
-        - Conception et déploiement d’un volet SaaS au sein du site, réservé à l’administration. Ce SaaS permet aux agent publics de consulter des données sensibles. Homologation de sécurité.
+        - "Recrutement et management d’une équipe pluri-disciplinaire de 8 personnes(bizdev, SEO, designer, devoppeurs)"
+        - "Élaboration et déploiement d’une stratégie produit multi-client : site public pour entreprises et citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
+        - "Direction technique dans un contexte d’hyper croissance (de zéro à 8M de visites et 150M de requêtes mensuelles en 2025) et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité."
+    - title: Consultant
+      period: 2020 ∙ 2021
+      company: Direction Interministérielle du Numérique
+      location: Paris ∙ Rennes
+      description: |
+        Refonte de la plateforme des API du service public, api.gouv.fr
+      achievements: []
     - title: Product Manager
       period: 2018 ∙ 2020
       company: Skillup
@@ -122,7 +127,7 @@ projects:
         - Contentful
         - Jamstack
       description: |
-        Conception et développement d'un site vitrine pour Manakin Production, structure de production de projets artistiques dans le spectacle vivant.
+        Conception et développement d'un site vitrine pour Manakin Production, structure de production de projets artistiques dans le spectacle vivant. Ce site n’est plus en ligne.
       img: /resume/sites/manakin.png
       links:
         github: https://github.com/XavierJp/Manakinprod

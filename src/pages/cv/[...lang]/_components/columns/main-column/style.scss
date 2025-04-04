@@ -83,43 +83,6 @@
           height: calc(100% - 10px);
         }
       }
-
-      img {
-        border: 1px dotted light-dark(var(--light-border), var(--dark-border));
-        border-radius: 8px;
-        max-width: 55%;
-        margin-bottom: 20px;
-
-        @media only screen and (max-width: 768px) {
-          display: none;
-        }
-
-        @media print {
-          display: none;
-        }
-      }
-
-      .tags {
-        flex-wrap: wrap;
-
-        > small {
-          color: light-dark(var(--dark-font-title), var(--light-font-title));
-          background: light-dark(
-            var(--light-font-title),
-            var(--dark-font-title)
-          );
-          border: 1px solid
-            light-dark(var(--light-font-title), var(--dark-font-title));
-          border-radius: 2px;
-          padding: 0 4px;
-          font-weight: 900;
-        }
-
-        ~ small {
-          margin-top: 20px;
-          text-align: right;
-        }
-      }
     }
   }
 }
