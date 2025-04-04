@@ -60,11 +60,10 @@ experiences:
       location: Paris
       description: |
         Développeur C# dans une équipe de machine learning appliquée à la publicité en ligne :
-      achievements: [
+      achievements:
           - Développement d’algorithmes de classification (K-means) et de prédiction (descente de gradient)
           - "Découverte du développement web en concevant des outils de data visualisation (React,
-          D3.js)",
-        ]
+          D3.js)"
     - title: Commando développeur
       period: "2015"
       company: Société générale Corporate and Investment Banking (SGCIB)
