@@ -28,7 +28,7 @@ experiences:
   title: expériences professionnelles
   data:
     - title: Intrapreneur
-      period: 2020 ∙ 2025
+      period: 2021 ∙ 2025
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
@@ -36,13 +36,13 @@ experiences:
       achievements:
         - "Recrutement et management d’une équipe pluri-disciplinaire de 8 personnes(bizdev, SEO, designer, devoppeurs)"
         - "Élaboration et déploiement d’une stratégie produit multi-client : site public pour entreprises et citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
-        - "Direction technique dans un contexte d’hyper croissance (de zéro à 8M de visites et 150M de requêtes mensuelles en 2025) et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité."
-    - title: Consultant
+        - "Direction technique dans un contexte d’hyper croissance (de zéro à 8M de visites et 150M de requêtes mensuelles en 2025) et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
+    - title: Product manager et développeur freelance
       period: 2020 ∙ 2021
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Refonte de la plateforme des API du service public, api.gouv.fr
+        Refonte de la plateforme des API du service public, api.gouv.fr.
       achievements: []
     - title: Product Manager
       period: 2018 ∙ 2020
@@ -59,8 +59,12 @@ experiences:
       company: SmartAdServer
       location: Paris
       description: |
-        Développeur C# dans une équipe de machine learning appliquée. Découverte du développement web en concevant des outils de data visualisation (React, D3.js).
-      achievements: []
+        Développeur C# dans une équipe de machine learning appliquée à la publicité en ligne :
+      achievements: [
+          - Développement d’algorithmes de classification (K-means) et de prédiction (descente de gradient)
+          - "Découverte du développement web en concevant des outils de data visualisation (React,
+          D3.js)",
+        ]
     - title: Commando développeur
       period: "2015"
       company: Société générale Corporate and Investment Banking (SGCIB)
