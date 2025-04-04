@@ -13,7 +13,7 @@ export const Summary = ({
 }) => {
   return (
     <NoPrint>
-      <div className="summary p-4 flex justify-content-space-between align-items-center gap-4">
+      <div className="default-flex-container summary">
         <div>{resume.intro}</div>
         <div
           tabIndex={0}

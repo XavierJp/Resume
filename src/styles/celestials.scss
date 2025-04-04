@@ -58,16 +58,20 @@
       text-decoration: none;
       text-shadow: 0 0 15px #8bdcff;
       transition: all 75ms linear;
+      color: var(--dark-font-main) !important;
 
+      &:active,
       &:visited {
-        color: var(--dark-font-main);
+        color: var(--dark-font-main) !important;
       }
-      &:focus {
-        outline: none;
-      }
+
+      &:focus,
       &:hover {
+        outline: none;
+        color: var(--dark-font-main) !important;
         opacity: 100%;
-        text-shadow: 0 0 25px #8bdcff;
+        background: transparent;
+        text-shadow: 0 0 35px #8bdcff;
         text-decoration: underline;
       }
     }

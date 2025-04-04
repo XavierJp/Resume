@@ -1,5 +1,8 @@
 div.summary {
   border-bottom: 1px solid light-dark(var(--light-border), var(--dark-border));
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 
   > div:first-of-type {
     flex-grow: 1;

@@ -5,7 +5,7 @@ contact:
   title: contact
   data:
     - label: Site personnel
-      href: https://x.jouppe.fr/cv/fr
+      href: https://xavier.jouppe.fr/cv/fr
 skills:
   title: compétences
   data:
@@ -24,6 +24,17 @@ education:
     - ""
     - Master 2 d’économie
     - Paris Panthéon Sorbonne
+technos:
+  title: tech
+  data:
+    - React, Next
+    - Node, Express
+    - ""
+    - Python, Typescript
+    - ""
+    - Redis, Postrgres
+    - Ansible, Docker
+    - OVH
 experiences:
   title: expériences professionnelles
   data:
@@ -32,24 +43,24 @@ experiences:
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Création puis développement de l’Annuaire des Entreprises, premier site public de consultation de données d’entreprises. Recherche de sponsors au sein de l’administration, élaboration puis execution de la stratégie et passage à l'échelle :
+        Création puis développement de l’Annuaire des Entreprises, premier site public pour les données d’entreprises. Recherche de sponsors au sein de l’administration, élaboration puis exécution de la stratégie et passage à l'échelle :
       achievements:
-        - "Recrutement et management d’une équipe pluri-disciplinaire de 8 personnes(bizdev, SEO, designer, devoppeurs)"
-        - "Élaboration et déploiement d’une stratégie produit multi-client : site public pour entreprises et citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
+        - "Recrutement et management d’une équipe pluri-disciplinaire de 8 personnes (bizdev, SEO, designer, devoppeurs)"
+        - "Élaboration et déploiement d’une stratégie produit multi-clients : site public pour les entreprises et les citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
         - "Direction technique dans un contexte d’hyper croissance (de zéro à 8M de visites et 150M de requêtes mensuelles en 2025) et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
-    - title: Product manager et développeur freelance
-      period: 2020 ∙ 2021
+    - title: Product Manager et développeur freelance
+      period: '2020'
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Refonte de la plateforme des API du service public, api.gouv.fr.
+        Refonte de la plateforme des API du service public, api.gouv.fr, en binôme avec une UX designer
       achievements: []
     - title: Product Manager
-      period: 2018 ∙ 2020
+      period: 2018 ∙ 2019
       company: Skillup
       location: Paris
       description: |
-        Premier Product Manager sur un produit SaaS B2B dédié à la formation en entreprise.
+        Premier Product Manager sur un produit SaaS B2B dédié à la formation en entreprise
       achievements:
         - Mise en place d'une culture produit au sein de l'équipe
         - Élaboration en équipe de la feuille de route stratégique
@@ -69,7 +80,7 @@ experiences:
       company: Société générale Corporate and Investment Banking (SGCIB)
       location: Hong Kong
       description: |
-        Première expérience professionnelle dans un grand groupe et dans un cadre international. Développement d’outils de middle office (VB.NET, C#, Python)
+        Première expérience professionnelle dans un grand groupe et dans un cadre international. Développement d’outils pour le middle office (VB.NET, C#, Python)
       achievements: []
 projects:
   title: projets et réalisations

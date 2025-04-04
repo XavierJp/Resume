@@ -8,12 +8,12 @@ export const Experience = ({
   description,
   achievements,
 }: IExperience) => (
-  <div className="block">
-    <h3 className="flex justify-content-space-between">
+  <>
+    <h3 className="default-flex-container">
       <span>{title}</span>
       <span>{period}</span>
     </h3>
-    <div className="flex justify-content-space-between">
+    <div className="default-flex-container">
       <i>{company}</i>
       <i>{location}</i>
     </div>
@@ -27,5 +27,5 @@ export const Experience = ({
         </ul>
       )}
     </p>
-  </div>
+  </>
 );

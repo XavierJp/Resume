@@ -40,6 +40,10 @@ const resumeSchema = z.object({
     title: z.string(),
     data: z.array(z.string()),
   }),
+  technos: z.object({
+    title: z.string(),
+    data: z.array(z.string()),
+  }),
   education: z.object({
     title: z.string(),
     data: z.array(z.string()),

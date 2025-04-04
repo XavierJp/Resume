@@ -11,8 +11,8 @@ export const WebProject = ({
   links,
 }: ProjectItem) => {
   return (
-    <div className="block">
-      <div className="web-project-title">
+    <>
+      <div className="default-flex-container">
         <span>
           <h3>{links?.href ? <a href={links.href}>{name}</a> : <>{name}</>}</h3>
         </span>
@@ -27,7 +27,7 @@ export const WebProject = ({
         )}
         <strong>{timespan}</strong>
       </div>
-      <div className="web-project-content">
+      <div className="default-flex-container web-project-content">
         <img src={img} />
         <div>
           <div className="tags">
@@ -40,6 +40,6 @@ export const WebProject = ({
           </small>
         </div>
       </div>
-    </div>
+    </>
   );
 };

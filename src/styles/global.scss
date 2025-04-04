@@ -1,3 +1,9 @@
+// hide date, site title etc.
+@page {
+  size: auto;
+  margin: 2mm auto;
+}
+
 html,
 body {
   margin: 0;
@@ -32,6 +38,14 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 0;
+}
+
+.default-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
 }
 
 @font-face {
@@ -106,16 +120,13 @@ a {
 
   &:hover,
   &:focus {
-    color: light-dark(var(--light-font-title), var(--dark-font-title));
-    opacity: 85%;
+    color: var(--light-font-title) !important;
+    background-color: #ffbf47;
   }
 
-  &:active {
-    color: inherit;
-  }
-
+  &:active,
   &:visited {
-    color: inherit;
+    color: light-dark(var(--light-font-title), var(--dark-font-title));
   }
 
   &:focus {
@@ -129,7 +140,7 @@ a {
 }
 
 .separator {
-  margin: 30px auto;
+  margin: 20px auto;
   border-radius: 45px;
   height: 1px;
   width: 30px;
@@ -154,6 +165,7 @@ a {
 @media print {
   html {
     font-size: 13px;
+    line-height: 16px;
   }
   .no-print {
     display: none;

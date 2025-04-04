@@ -24,4 +24,10 @@ header {
     border-radius: 100px;
     border: 2px solid light-dark(var(--light-border), var(--dark-border));
   }
+
+  @media print {
+    img {
+      width: 70px;
+    }
+  }
 }

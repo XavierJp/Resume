@@ -4,7 +4,7 @@ contact:
   title: "contact"
   data:
     - label: "Personal website"
-      href: "https://x.jouppe.fr/cv/en"
+      href: "https://xavier.jouppe.fr/cv/en"
 skills:
   title: "expertise"
   data:
@@ -16,6 +16,14 @@ skills:
     - "Web development"
     - "Software architecture"
     - "Scaling systems"
+technos:
+  title: tech
+  data:
+    - Reac.js, Next.js
+    - Node.js, Express.js
+    - ""
+    - Redis, Ansible, Docker
+    - OVH
 education:
   title: "education"
   data:
