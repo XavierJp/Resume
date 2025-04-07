@@ -58,7 +58,7 @@ body {
 
 @font-face {
   font-family: "FiraSans";
-  src: url("/src/fonts/Fira_Sans/FiraSans-Thin.ttf") format("TrueType");
+  src: url("/src/fonts/Fira_Sans/FiraSans-Thin.ttf") format("truetype");
   font-weight: lighter;
   font-style: normal;
   font-display: swap;
@@ -66,25 +66,25 @@ body {
 
 @font-face {
   font-family: "FiraSans";
-  src: url("/src/fonts/Fira_Sans/FiraSans-Regular.ttf") format("TrueType");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FiraSans";
-  src: url("/src/fonts/Fira_Sans/FiraSans-Bold.ttf") format("TrueType");
+  src: url("/src/fonts/Fira_Sans/FiraSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Charter";
-  src: url("/src/fonts/Fira_Sans/FiraSans-Italic.ttf") format("TrueType");
+  font-family: "FiraSans";
+  src: url("/src/fonts/Fira_Sans/FiraSans-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraSans";
+  src: url("/src/fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 

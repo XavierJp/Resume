@@ -7,7 +7,7 @@ export const Header = () => {
         <img src="/resume/medaillon.jpg" />
         <div>
           <h1>
-            Xavier <strong>Jouppe</strong>
+            Xavier <span>Jouppe</span>
           </h1>
           <small>Rennes ∙ France</small>
         </div>
