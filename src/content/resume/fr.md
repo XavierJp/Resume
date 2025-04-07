@@ -9,13 +9,16 @@ contact:
 skills:
   title: compétences
   data:
-    - Gestion d’équipe
+    - Management
+    - Recrutement
     - ""
     - Développement web
     - Architecture logicielle
     - Passage à l’échelle
     - ""
-    - Conception produit et UX
+    - Stratégie
+    - Conception produit
+    - UX
 education:
   title: études
   data:
@@ -43,11 +46,11 @@ experiences:
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Création puis développement de l’Annuaire des Entreprises, premier site public pour les données d’entreprises. Recherche de sponsors au sein de l’administration, élaboration puis exécution de la stratégie et passage à l'échelle :
+        Création puis développement de l’Annuaire des Entreprises, premier site public pour les données d’entreprises (8M de visites et 150M de requêtes mensuelles en 2025). Recherche de sponsors au sein de l’administration, élaboration puis exécution de la stratégie et passage à l'échelle :
       achievements:
         - "Recrutement et management d’une équipe pluri-disciplinaire de 8 personnes (bizdev, SEO, designer, devoppeurs)"
         - "Élaboration et déploiement d’une stratégie produit multi-clients : site public pour les entreprises et les citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
-        - "Direction technique dans un contexte d’hyper croissance (de zéro à 8M de visites et 150M de requêtes mensuelles en 2025) et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
+        - "Direction technique dans un contexte d’hyper croissance et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
     - title: Product Manager et développeur freelance
       period: '2020'
       company: Direction Interministérielle du Numérique

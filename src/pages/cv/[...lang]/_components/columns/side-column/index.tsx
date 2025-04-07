@@ -7,6 +7,16 @@ export const SideColumn = ({ resume }: { resume: ResumeType }) => {
     <div className="side-column p-4">
       <div>
         <h2>{resume.contact.title}</h2>
+        <div style={{ display: "none" }}>
+          <div>
+            <a href="mailto:xx@yyy.fr">xx@yyy.fr</a>
+          </div>
+          <div>
+            <a href="tel:+336xxxxxx">+33 6 xx xx</a>
+          </div>
+          <div className="separator" />
+        </div>
+
         <div className="icon flex justify-content-start align-items-center flex-wrap">
           <svg
             xmlns="http://www.w3.org/2000/svg"
