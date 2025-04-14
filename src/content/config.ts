@@ -58,14 +58,6 @@ const resumeSchema = z.object({
   }),
 });
 
-// Define poems collection schema
-const poemsSchema = z.object({ haikus: z.array(z.string()) });
-
-const poemsCollection = defineCollection({
-  type: "content",
-  schema: poemsSchema,
-});
-
 // Define collections
 const resumeCollection = defineCollection({
   type: "content",
@@ -75,7 +67,6 @@ const resumeCollection = defineCollection({
 // Export collections
 export const collections = {
   resume: resumeCollection,
-  poems: poemsCollection,
 };
 
 // Infer the types from the schema
@@ -83,4 +74,3 @@ export type ResumeType = z.infer<typeof resumeSchema>;
 export type ExperienceItem = z.infer<typeof experienceSchema>;
 export type ProjectItem = z.infer<typeof projectSchema>;
 export type ContactItem = z.infer<typeof contactSchema>;
-export type PoemsType = z.infer<typeof poemsSchema>;

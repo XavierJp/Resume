@@ -5,6 +5,52 @@
   overflow-y: auto;
   background-color: var(--dark-bckgd) !important;
 
+  a {
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: 0 0 15px #8bdcff;
+    transition: all 75ms linear;
+    color: var(--dark-font-main) !important;
+
+    &:active,
+    &:visited {
+      color: var(--dark-font-main) !important;
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+      color: var(--dark-font-main) !important;
+      opacity: 100%;
+      background: transparent;
+      text-shadow: 0 0 35px #8bdcff;
+      text-decoration: underline;
+    }
+  }
+
+  #name-medaillon {
+    position: absolute;
+    bottom: -50px;
+    color: var(--dark-font-main);
+    background-color: var(--dark-bckgd);
+    border-radius: 50px;
+    border: 1px solid var(--dark-font-main);
+    padding: 0px 10px;
+    margin: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 1000;
+
+    > span {
+      display: inline-block;
+    }
+    > span:not(:last-of-type) {
+      border-right: 1px solid var(--dark-font-main);
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+  }
+
   #planet > div {
     position: relative;
     z-index: 0;
@@ -44,7 +90,7 @@
   }
   #intro-text > div {
     z-index: 1000;
-    margin-top: 110vh;
+    margin-top: 90vh;
     color: var(--dark-font-main);
     transform: perspective(200px) rotateX(25deg);
     font-weight: light;
@@ -52,29 +98,6 @@
     font-size: 2rem;
     font-size: 350%;
     bottom: 0;
-
-    a {
-      font-weight: bolder;
-      text-decoration: none;
-      text-shadow: 0 0 15px #8bdcff;
-      transition: all 75ms linear;
-      color: var(--dark-font-main) !important;
-
-      &:active,
-      &:visited {
-        color: var(--dark-font-main) !important;
-      }
-
-      &:focus,
-      &:hover {
-        outline: none;
-        color: var(--dark-font-main) !important;
-        opacity: 100%;
-        background: transparent;
-        text-shadow: 0 0 35px #8bdcff;
-        text-decoration: underline;
-      }
-    }
   }
   #comet > div {
     position: absolute;

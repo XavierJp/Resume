@@ -17,8 +17,7 @@ import DefaultLayout from "@layouts/DefaultLayout.astro";
       class="flex flex-column justify-content-center align-items-center layer layer-text"
     >
       <div>
-        Un{" "}
-        <a href="/haiku">haiku</a> ou un <a href="/cv/fr">CV</a> ?
+        <a href="/cv/fr">CV</a>, or <a href="/cv/en">resume</a> ?
       </div>
     </div>
     <div
@@ -29,7 +28,11 @@ import DefaultLayout from "@layouts/DefaultLayout.astro";
         <img src="/celestials/comet.svg" />
       </div>
     </div>
-    <div id="star-container" class="layer layer-deep"></div>
+    <div id="star-container" class="layer layer-deep">
+      <div id="name-medaillon">
+        <span>Xavier JOUPPE</span><span>{new Date().getFullYear()} ©</span>
+      </div>
+    </div>
     <div id="planet-small-container" class="layer layer-back"></div>
     <div id="planet-medium-container" class="layer layer-base"></div>
   </div>
