@@ -11,13 +11,14 @@ skills:
   data:
     - Management
     - Recruitment
+    - Product & tech strategy
     - ""
     - Web development
     - Software architecture
-    - Scaling systems
+    - Scaling
     - ""
-    - Strategy
-    - Product design
+    - Roadmap
+    - Product management
     - UX
 education:
   title: education
@@ -32,25 +33,27 @@ technos:
   data:
     - React, Next
     - Node, Express
+    - TypeScript
     - ""
-    - Python, TypeScript
+    - Python
+    - FastAPI
     - ""
-    - Redis, Postgres
+    - Redis, PostgreSQL
     - Ansible, Docker
     - OVH
 experiences:
   title: professional experience
   data:
-    - title: Intrapreneur
+    - title: Intrapreneur / CTPO @Annuaire des Entreprises
       period: 2021 ∙ 2025
       company: Interministerial Digital Department
       location: Paris ∙ Rennes
       description: |
-        Creation and development of “Annuaire des Entreprises”, the first public site for french companies data (8M visits and 150M monthly requests in 2025). Finding sponsors within the administration, strategy, and scaling:
+        Creation and development of Annuaire des Entreprises, the first public site for business data (8M visits, 150M requests in January 2025). Finding sponsors within the administration, strategy design and execution, scaling:
       achievements:
-        - "Recruitment and management of a multidisciplinary team of 8 people (business development, SEO, designer, developers)"
-        - "Development and deployment of a multi-client product strategy: public site for businesses and citizens, SaaS for public officials, open API for developers"
-        - "Technical leadership in a context of hyper-growth and increasing security constraints. Infrastructure scalability challenges, application performance, and security compliance"
+        - "Recruitment and management of a multidisciplinary team of 9 people (business development, SEO, designer, developers)"
+        - "Development and deployment of a multi-client product strategy: public website for businesses and citizens, SaaS for public officials, open API for developers"
+        - "Technical and product leadership (CTPO) in a hyper-growth context with increasing security constraints. Infrastructure scalability challenges, application performance optimization, and security compliance"
     - title: Product Manager and Freelance Developer
       period: "2020"
       company: Interministerial Digital Department
@@ -76,7 +79,7 @@ experiences:
         C# developer in a machine learning team applied to online advertising:
       achievements:
         - Development of classification algorithms (K-means) and prediction algorithms (gradient descent)
-        - "Discovery of web development by creating data visualization tools (React, D3.js)"
+        - "Self-teaching of web development by creating data visualization tools (React, D3.js)"
     - title: Developer Commando
       period: "2015"
       company: Société Générale Corporate and Investment Banking (SGCIB)
@@ -102,7 +105,7 @@ projects:
         - Node.js
         - OVH
       description: |
-        First public service for french companies open data. 8M visits and 150M monthly requests in 2025. Hosted on dedicated OVH servers across multiple regions.
+        First public service for consulting open business data. 8M visits and 150M monthly requests in 2025. Hosted on dedicated OVH servers across multiple regions.
       img: /resume/sites/annuaire.png
       links:
         href: https://annuaire-entreprises.data.gouv.fr
@@ -110,7 +113,7 @@ projects:
     - name: CuiCuiAsso
       timespan: "2024"
       tags:
-        - showcase site
+        - Showcase site
         - 11ty
         - Cloudflare
       description: |
@@ -148,3 +151,5 @@ projects:
       links:
         github: https://github.com/XavierJp/Manakinprod
 ---
+
+<!-- You can add any additional markdown content here if needed -->

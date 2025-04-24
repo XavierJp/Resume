@@ -11,15 +11,14 @@ skills:
   data:
     - Management
     - Recrutement
-    - Stratégie produit & technique
+    - Stratégie produit & tech
     - ""
     - Développement web
     - Architecture logicielle
     - Passage à l’échelle
     - ""
     - Feuille de route
-    - Conception produit
-    - UX
+    - Conception produit, UX
 education:
   title: études
   data:
@@ -27,7 +26,7 @@ education:
     - CentraleSupélec ECP14
     - ""
     - Master 2 d’économie
-    - Paris Panthéon Sorbonne
+    - Panthéon Sorbonne
 technos:
   title: tech
   data:
@@ -35,8 +34,7 @@ technos:
     - Node, Express
     - TypeScript
     - ""
-    - Python
-    - FastAPI
+    - Python, FastAPI
     - ""
     - Redis, PostgreSQL
     - Ansible, Docker
@@ -44,7 +42,7 @@ technos:
 experiences:
   title: expériences professionnelles
   data:
-    - title: Intrapreneur / CTPO
+    - title: Intrapreneur / CTPO @Annuaire des Entreprises
       period: 2021 ∙ 2025
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
@@ -54,12 +52,12 @@ experiences:
         - "Recrutement, management d’une équipe pluri-disciplinaire de 9 personnes (bizdev, SEO, designer, devoppeurs)"
         - "Élaboration et déploiement d’une stratégie produit multi-clients : site grand public pour les entreprises et les citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
         - "Direction technique et produit (CTPO) dans un contexte d’hyper croissance et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
-    - title: Product Manager et développeur freelance
+    - title: Product Manager et développeur freelance @api.gouv.fr
       period: '2020'
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Refonte de la plateforme des API du service public, api.gouv.fr, en binôme avec une UX designer
+        Refonte de la plateforme des API du service public
       achievements: []
     - title: Product Manager
       period: 2018 ∙ 2019
@@ -152,5 +150,3 @@ projects:
       links:
         github: https://github.com/XavierJp/Manakinprod
 ---
-
-<!-- You can add any additional markdown content here if needed -->
