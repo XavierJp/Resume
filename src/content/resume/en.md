@@ -18,8 +18,7 @@ skills:
     - Scaling
     - ""
     - Roadmap
-    - Product management
-    - UX
+    - Product management, UX
 education:
   title: education
   data:
@@ -27,16 +26,14 @@ education:
     - CentraleSupélec ECP14
     - ""
     - Master's degree in Economics
-    - Paris Panthéon Sorbonne
+    - Panthéon Sorbonne
 technos:
   title: tech
   data:
     - React, Next
     - Node, Express
     - TypeScript
-    - ""
-    - Python
-    - FastAPI
+    - Python, FastAPI
     - ""
     - Redis, PostgreSQL
     - Ansible, Docker
@@ -54,7 +51,7 @@ experiences:
         - "Recruitment and management of a multidisciplinary team of 9 people (business development, SEO, designer, developers)"
         - "Development and deployment of a multi-client product strategy: public website for businesses and citizens, SaaS for public officials, open API for developers"
         - "Technical and product leadership (CTPO) in a hyper-growth context with increasing security constraints. Infrastructure scalability challenges, application performance optimization, and security compliance"
-    - title: Product Manager and Freelance Developer
+    - title: Freelance Developer
       period: "2020"
       company: Interministerial Digital Department
       location: Paris ∙ Rennes

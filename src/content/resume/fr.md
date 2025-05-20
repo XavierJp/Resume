@@ -52,7 +52,7 @@ experiences:
         - "Recrutement, management d’une équipe pluri-disciplinaire de 9 personnes (bizdev, SEO, designer, devoppeurs)"
         - "Élaboration et déploiement d’une stratégie produit multi-clients : site grand public pour les entreprises et les citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
         - "Direction technique et produit (CTPO) dans un contexte d’hyper croissance et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
-    - title: Product Manager et développeur freelance @api.gouv.fr
+    - title: Développeur freelance @api.gouv.fr
       period: '2020'
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
