@@ -1,6 +1,6 @@
 ---
 intro: |
-  Currently seeking employment in Rennes, Paris, or Nantes
+  Rennes, Paris, or Nantes
 contact:
   title: contact
   data:

@@ -1,6 +1,6 @@
 ---
 intro: |
-  En recherche d’emploi, à Rennes, Paris ou Nantes
+  Rennes, Paris ou Nantes
 contact:
   title: contact
   data:
