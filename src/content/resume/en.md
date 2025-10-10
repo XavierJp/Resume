@@ -1,6 +1,5 @@
 ---
-intro: |
-  " "
+intro: ""
 contact:
   title: contact
   data:
