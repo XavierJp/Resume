@@ -1,6 +1,6 @@
 ---
 intro: |
-  Rennes, Paris ou Nantes
+  " "
 contact:
   title: contact
   data:

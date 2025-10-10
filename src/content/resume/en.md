@@ -1,6 +1,6 @@
 ---
 intro: |
-  Rennes, Paris, or Nantes
+  " "
 contact:
   title: contact
   data:
