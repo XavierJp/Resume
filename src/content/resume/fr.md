@@ -41,22 +41,23 @@ technos:
 experiences:
   title: expériences professionnelles
   data:
-    - title: Intrapreneur / CTPO @Annuaire des Entreprises
+    - title: Intrapreneur / lead tech @Annuaire des Entreprises
       period: 2021 ∙ 2025
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Création puis développement de l’Annuaire des Entreprises, premier site public pour les données d’entreprises (8M de visites, 150M de requêtes pour le mois de janvier 2025). Recherche de sponsors au sein de l’administration, conception et exécution de la stratégie, passage à l'échelle :
+        Création puis développement de l’Annuaire des Entreprises, premier site public pour les données d’entreprises (8M de visites, 150M de requêtes pour le mois de janvier 2025). Développement, mise en place d'une stratégie SEO, gestion du passage à l'échelle :
       achievements:
-        - "Recrutement, management d’une équipe pluri-disciplinaire de 9 personnes (bizdev, SEO, designer, devoppeurs)"
-        - "Élaboration et déploiement d’une stratégie produit multi-clients : site grand public pour les entreprises et les citoyens, SaaS pour les agents publics, API ouverte pour les développeurs"
-        - "Direction technique et produit (CTPO) dans un contexte d’hyper croissance et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
+        - Développement du site web en Next.js (React, NodeJS, Redis), priorité donnée à l'expérience  utilisateur et aux performances SEO
+        - Développement de plusieurs API web (Express, NodeJS, FastAPI(Python), PostgreSQL)
+        - "Mise en place d'une stratégie de test (CI : tests end2end, tests unitaires, linting) et de déploiement (CD github actions, Ansible & Docker pour le provisionnement, OVHCloud)"
+        - "Direction technique et produit dans un contexte d’hyper croissance et de contraintes de sécurité croissantes. Défis de scalabilité de l’infrastructure, de performances applicatives et homologation de sécurité"
     - title: Développeur freelance @api.gouv.fr
       period: '2020'
       company: Direction Interministérielle du Numérique
       location: Paris ∙ Rennes
       description: |
-        Refonte de la plateforme des API du service public
+        Refonte de la plateforme des API du service public en Next.js (React, NodeJS)
       achievements: []
     - title: Product Manager
       period: 2018 ∙ 2019
@@ -75,7 +76,7 @@ experiences:
       description: |
         Développeur C# dans une équipe de machine learning appliquée à la publicité en ligne :
       achievements:
-          - Développement d’algorithmes de classification (K-means) et de prédiction (descente de gradient)
+          - Développement d’algorithmes en C# (K-means, descente de gradient)
           - "Découverte du développement web en concevant des outils de data visualisation (React,
           D3.js)"
     - title: Commando développeur

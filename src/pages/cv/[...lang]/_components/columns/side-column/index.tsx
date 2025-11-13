@@ -9,10 +9,10 @@ export const SideColumn = ({ resume }: { resume: ResumeType }) => {
         <h2>{resume.contact.title}</h2>
         <div style={{ display: "none" }}>
           <div>
-            <a href="mailto:xx@yyy.fr">xx@yyy.fr</a>
+            <a href="mailto:xxx@xxx">xxx@xxx</a>
           </div>
           <div>
-            <a href="tel:+336xxxxxx">+33 6 xx xx</a>
+            <a href="tel:+33xxx">+33xxx</a>
           </div>
           <div className="separator" />
         </div>
@@ -46,6 +46,16 @@ export const SideColumn = ({ resume }: { resume: ResumeType }) => {
         ))}
       </div>
       <br />
+      <PrintOnly>
+        <div>
+          <h2>{resume.technos.title}</h2>
+          {resume.technos.data.map((techno) =>
+            !!techno ? <div>{techno}</div> : <div className="separator" />
+          )}
+        </div>
+        <br />
+      </PrintOnly>
+      <br />
       <div>
         <h2>{resume.skills.title}</h2>
         {resume.skills.data.map((skill) =>
@@ -59,16 +69,7 @@ export const SideColumn = ({ resume }: { resume: ResumeType }) => {
           !!education ? <div>{education}</div> : <div className="separator" />
         )}
       </div>
-      <br />
-      <PrintOnly>
-        <div>
-          <h2>{resume.technos.title}</h2>
-          {resume.technos.data.map((techno) =>
-            !!techno ? <div>{techno}</div> : <div className="separator" />
-          )}
-        </div>
-        <br />
-      </PrintOnly>
+      
     </div>
   );
 };
