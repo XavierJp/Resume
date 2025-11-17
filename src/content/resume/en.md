@@ -40,13 +40,15 @@ technos:
 experiences:
   title: professional experience
   data:
-    - title: Intrapreneur / CTPO @Annuaire des Entreprises
+    - title: Intrapreneur / Tech lead @Annuaire des Entreprises
       period: 2021 ∙ 2025
       company: Interministerial Digital Department
       location: Paris ∙ Rennes
       description: |
         Creation and development of Annuaire des Entreprises, the first public site for business data (8M visits, 150M requests in January 2025). Finding sponsors within the administration, strategy design and execution, scaling:
       achievements:
+        - Fullstack development of the web app in Next.js (React, NodeJS, Redis), with a focus on UX and SEO perfomances (RSC, ISR, SSR)
+        - Development of several API (ExpressJS, FastAPI (Python), PostgreSQL)
         - "Recruitment and management of a multidisciplinary team of 9 people (business development, SEO, designer, developers)"
         - "Development and deployment of a multi-client product strategy: public website for businesses and citizens, SaaS for public officials, open API for developers"
         - "Technical and product leadership (CTPO) in a hyper-growth context with increasing security constraints. Infrastructure scalability challenges, application performance optimization, and security compliance"
