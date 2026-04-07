@@ -1,5 +1,7 @@
 # Resume
 
+[![Astro](https://img.shields.io/badge/Astro-6-bc52ee?logo=astro&logoColor=white)](https://astro.build/) [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare%20Pages-deployed-f38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
+
 ## Goal
 
 This repo has two goals :
