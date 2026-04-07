@@ -1,4 +1,4 @@
-import type { ResumeType } from "src/content/config";
+import type { ResumeType } from "src/content.config";
 import "./style.scss";
 import { PrintOnly } from "@components/print-only";
 

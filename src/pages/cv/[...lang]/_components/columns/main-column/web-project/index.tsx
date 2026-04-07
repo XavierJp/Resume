@@ -1,5 +1,5 @@
 import { NoPrint } from "@components/no-print";
-import type { ProjectItem } from "src/content/config";
+import type { ProjectItem } from "src/content.config";
 import "./style.scss";
 
 export const WebProject = ({

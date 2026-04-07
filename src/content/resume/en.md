@@ -40,6 +40,13 @@ technos:
 experiences:
   title: professional experience
   data:
+    - title: CTO @Parsio
+      period: 2025 ∙ present
+      company: Parsio
+      location: Rennes
+      description: |
+        Technical and product leadership
+      achievements: []
     - title: Intrapreneur / CTPO @Annuaire des Entreprises
       period: 2021 ∙ 2025
       company: Interministerial Digital Department

@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 // Define the schema types directly
 const experienceSchema = z.object({
@@ -60,7 +61,7 @@ const resumeSchema = z.object({
 
 // Define collections
 const resumeCollection = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/resume" }),
   schema: resumeSchema,
 });
 
