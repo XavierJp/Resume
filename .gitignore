@@ -4,8 +4,8 @@ dist/
 # generated types
 .astro/
 
-# wrangler (keep deploy config, ignore local state)
-.wrangler/state/
+# wrangler
+.wrangler/
 
 # dependencies
 node_modules/
