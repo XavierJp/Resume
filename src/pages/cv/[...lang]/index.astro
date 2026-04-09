@@ -10,18 +10,11 @@ import { TwoColumnsLayout } from "./_components/columns/two-columns-layout";
 import { getEntry } from "astro:content";
 import type { ResumeType } from "src/content.config";
 
-function isValidLanguage(lang: string): boolean {
-  return ["fr", "en"].includes(lang);
-}
-
 export function getStaticPaths() {
   return ["fr", "en"].map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
-if (!isValidLanguage(lang)) {
-  return Astro.redirect("/cv/fr"); // Redirect to default French version
-}
 
 // Fetch resume data based on language
 const resumeEntry = await getEntry("resume", lang);

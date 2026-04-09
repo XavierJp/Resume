@@ -7,6 +7,9 @@ export default defineConfig({
   output: "server",
   adapter: cloudflare(),
   integrations: [react()],
+  redirects: {
+    "/": "/cv/en",
+  },
   vite: {
     resolve: {
       // Use react-dom/server.edge instead of react-dom/server.browser for React 19.
